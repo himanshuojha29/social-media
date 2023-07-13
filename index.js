@@ -152,25 +152,25 @@ const changeActiveColorsClass = () => {
 colorPalette.forEach(color => {
     color.addEventListener('click', () => {
         let primary;
-      // remove active class from colors 
+        // remove active class from colors 
         changeActiveColorsClass()
 
-        if(color.classList.contains('color-1')){
+        if (color.classList.contains('color-1')) {
             primaryHue = 252;
-        }else if (color.classList.contains('color-2')){
+        } else if (color.classList.contains('color-2')) {
             primaryHue = 52;
         }
-        else if (color.classList.contains('color-3')){
+        else if (color.classList.contains('color-3')) {
             primaryHue = 352;
-        }else if (color.classList.contains('color-4')){
+        } else if (color.classList.contains('color-4')) {
             primaryHue = 152;
-        }else if (color.classList.contains('color-5')){
+        } else if (color.classList.contains('color-5')) {
             primaryHue = 202;
         }
 
         color.classList.add('active');
 
-        root.style.setProperty('--primary-color-hue',primaryHue);
+        root.style.setProperty('--primary-color-hue', primaryHue);
     })
 })
 
@@ -205,12 +205,12 @@ const changeBG = () => {
 bg1.addEventListener('click', () => {
     // add active calss
     bg1.classList.add('active');
-       // remove active class from the others
+    // remove active class from the others
 
-       bg2.classList.remove('active');
-       bg3.classList.remove('active');
+    bg2.classList.remove('active');
+    bg3.classList.remove('active');
 
-       window.location.reload();
+    window.location.reload();
 });
 
 
